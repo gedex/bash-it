@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-SCM_THEME_PROMPT_DIRTY=" ${red}✗"
-SCM_THEME_PROMPT_CLEAN=" ${bold_green}✓"
+SCM_THEME_PROMPT_DIRTY="${orange}*"
+SCM_THEME_PROMPT_CLEAN=""
 SCM_THEME_PROMPT_PREFIX=" |"
 SCM_THEME_PROMPT_SUFFIX="${green}|"
 
