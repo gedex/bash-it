@@ -11,17 +11,20 @@ export BASH_IT=$HOME/.bash_it
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='bobby'
+export BASH_IT_THEME='akeda'
 
 # Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
+export GIT_HOSTING='git@github.com'
 
 # Set my editor and git editor
-export EDITOR="/usr/bin/mate -w"
-export GIT_EDITOR='/usr/bin/mate -w'
+export EDITOR="/usr/local/bin/subl"
+export GIT_EDITOR='/usr/local/bin/subl'
+
+# Development Gears
+# export PHP_CLI="/usr/local/php/bin/php"
 
 # Set the path nginx
-export NGINX_PATH='/opt/nginx'
+#export NGINX_PATH='/opt/nginx'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
@@ -29,11 +32,11 @@ unset MAILCHECK
 
 # Change this to your console based IRC client of choice.
 
-export IRC_CLIENT='irssi'
+#export IRC_CLIENT='irssi'
 
 # Set this to the command you use for todo.txt-cli
 
-export TODO="t"
+#export TODO="t"
 
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
 # https://github.com/xvzf/vcprompt
