@@ -15,6 +15,20 @@ then
 fi
 alias stpackages='open ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/'
 
+# DNSCrypt
+# Install first via brew
+# brew install dnscrypt-proxy
+if [ -z "$DNSCRYPT_RESOLVER" ]; then
+	DNSCRYPT_RESOLVER="176.56.237.171:443"
+fi
+if [ -z "$DNSCRYPT_PROVIDER" ]; then
+	DNSCRYPT_PROVIDER="2.dnscrypt-cert.resolver1.dnscrypt.eu"
+fi
+if [ -z "$DNSCRYPT_PROVIDER_KEY" ]; then
+	DNSCRYPT_PROVIDER_KEY="67C0:0F2C:21C5:5481:45DD:7CB4:6A27:1AF2:EB96:9931:40A3:09B6:2B8D:1653:1185:9C66"
+fi
+alias dnscrypt="sudo /usr/local/sbin/dnscrypt-proxy --local-address=127.0.0.1:53 --resolver-address=$DNSCRYPT_RESOLVER --provider-name=$DNSCRYPT_PROVIDER --provider-key=$DNSCRYPT_PROVIDER_KEY"
+
 # PHP Development
 if [ -z "$PHP_CLI" ]; then
 	PHP_CLI=$(which php)
