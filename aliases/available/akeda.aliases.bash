@@ -78,6 +78,7 @@ alias dti='docker --tls inspect'
 alias dtrm='docker --tls rm'
 alias dtrmi='docker --tls rmi'
 alias dtb='docker --tls build -t'
+alias dtrma='docker --tls rm $(docker --tls ps -a -q)'
 function open_dockerhost() {
 	bdip="$(bd ip)"
 	open "http://${bdip:-localhost}:${1:-80}$2"
